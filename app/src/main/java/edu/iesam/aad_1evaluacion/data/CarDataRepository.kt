@@ -5,11 +5,11 @@ import edu.iesam.aad_1evaluacion.features.coche.domain.CarRepository
 
 class CarDataRepository<T>(private val carXmlDataSource: CarXmlDataSource<T>) : CarRepository {
     override fun getAllCars(): List<Car> {
-        TODO("Not yet implemented")
+        return carXmlDataSource.getAllCars()
     }
 
     override fun saveCar(c: Car) {
-        TODO("Not yet implemented")
+        carXmlDataSource.saveCar(c)
     }
 
 }
